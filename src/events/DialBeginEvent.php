@@ -5,8 +5,9 @@ class DialBeginEvent extends BasicEvent
 {
     public function handle(\PAMI\Message\Event\EventMessage $event)
     {
-        //echo "===================Dial Begin!!!=====================\r\n";
-        //var_dump($event);
+        //
+        echo "===================Dial Begin!!!=====================\r\n";
+        var_dump($event);
         $caller = $event->getKey("calleridnum");
         $peer = $event->getKey("dialstring");
         $startdate = date('Y-m-d H:i:s',$event->getCreatedDate());

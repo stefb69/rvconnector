@@ -3,3 +3,4 @@
 *.log
 src/vendor/*
 !src/vendor/.htaccess
+src/config.inc

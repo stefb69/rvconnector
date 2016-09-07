@@ -12,7 +12,7 @@ class BasicEvent implements \PAMI\Listener\IEventListener
             // event name, like someSubEvent.
             $eventName .="----". $event->getSubEvent();
         }
-        //var_dump($event);
+        var_dump($event);
         echo "$eventName\r\n";
     }
 

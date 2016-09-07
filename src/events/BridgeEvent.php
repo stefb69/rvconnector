@@ -6,8 +6,8 @@ class BridgeEvent extends BasicEvent
 {
     public function handle(\PAMI\Message\Event\EventMessage $event)
     {
-//        echo "===================Bridge=====================\r\n";
-//        var_dump($event);
+        echo "===================Bridge=====================\r\n";
+        var_dump($event);
         $caller = $event->getCallerID1();
         $peer = $event->getCallerID2();
 
